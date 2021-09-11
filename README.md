@@ -1,7 +1,7 @@
 ## spring-boot-maven-surefire-unit-test
 
-1- Purpose : Customize maven test phase to execute only unit tests <br/>
-2- Reason : maven-surefire-plugin executes all the Test classes in test/java directory but we want to only execute unit tests for each maven build. <br/>
+1- Purpose : Customize maven life cycle test phase to execute only unit tests before each build. <br/>
+2- Reason : maven-surefire-plugin executes all the Test classes in "src/test/java" directory but we want to only execute unit tests before each maven build. <br/>
 3- To execute only specified unit tests for each maven build from the console run the following maven command : <br/>
 NOT : Execute maven command from where the pom.xml is located in the project directory. <br/>
 <pre> 
@@ -15,9 +15,7 @@ $ mvn clean install <br/>
 [INFO] ------------------------------------------------------- <br/>
 [INFO] Running com.company.customerinfo.service.unit.test.ProductServiceUnitTest <br/>
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.747 s - in com.company.customerinfo.service.unit.test.ProductServiceUnitTest <br/>
-[INFO] <br/>
 [INFO] Results: <br/>
-[INFO] <br/>
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0 <br/>
 
 4- surefire-reports can be accessed from the application directory : "target/surefire-reports" <br/>

@@ -6,6 +6,19 @@
 NOT : Execute maven command from where the pom.xml is located in the project directory. <br/>
 <pre> 
 $ mvn clean install <br/>
+
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ spring-boot-maven-surefire-unit-test --- <br/>
+[INFO] <br/>
+[INFO] ------------------------------------------------------- <br/>
+[INFO]  T E S T S <br/>
+[INFO] ------------------------------------------------------- <br/>
+[INFO] Running com.company.customerinfo.service.unit.test.ProductServiceUnitTest <br/>
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.747 s - in com.company.customerinfo.service.unit.test.ProductServiceUnitTest <br/>
+[INFO] <br/>
+[INFO] Results: <br/>
+[INFO] <br/>
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0 <br/>
+<br/>
 </pre>
 4- surefire-reports can be accessed from the application directory : "target/surefire-reports" <br/>
 
